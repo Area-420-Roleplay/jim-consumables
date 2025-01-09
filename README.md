@@ -99,7 +99,7 @@ If this script is enabled it will automatically try to use their system to apply
 	"stress"		-- Stress recovery buff
 	"armor"			-- Armour recovery buff
 	"hacking"		-- Hacking effect
-	"intelligence"		-- Intelligence effect
+	"intelligence"	-- Intelligence effect
 	"luck"			-- Luck effect
 	"strength"		-- Strength effect
 ```
@@ -113,7 +113,7 @@ A small example of a server-sided snippet for this imports the item and the emot
 
 ```lua
 local foodTable = {
-	["shotfries"] = { emote = "bsfries", canRun = false, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+	["shotfries"] = { emote = "bsfries", canRun = true, time = math.random(5000, 6000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
 }
 
 local emoteTable = {
